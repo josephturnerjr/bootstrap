@@ -38,6 +38,10 @@ build:
 	@echo "Thanks for using Bootstrap,"
 	@echo "<3 @mdo and @fat\n"
 
+install: bootstrap
+	@cp bootstrap/* ../.. -r
+	@mv ../../js/bootstrap* ../../js/vendor 
+
 #
 # RUN JSHINT & QUNIT TESTS IN PHANTOMJS
 #
